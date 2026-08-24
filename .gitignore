@@ -1,0 +1,80 @@
+# ============================================================
+#  PDOS v3.0-FAST — .gitignore
+#  DEV | JAHID • EDUCATIONAL PURPOSES ONLY
+# ============================================================
+
+# ---------- Python bytecode / cache ----------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# ---------- Virtual environments ----------
+.venv/
+venv/
+env/
+ENV/
+.python-version
+
+# ---------- Package managers ----------
+pip-log.txt
+poetry.lock
+uv.lock
+
+# ---------- Logs & runtime output ----------
+*.log
+logs/
+*.out
+
+# ---------- Environment / secrets ----------
+.env
+.env.*
+*.pem
+*.key
+
+# ---------- Test / coverage ----------
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+
+# ---------- Type checkers / linters ----------
+.mypy_cache/
+.ruff_cache/
+.mypy.ini
+
+# ---------- Jupyter (if used for lab notes) ----------
+.ipynb_checkpoints/
+
+# ---------- IDE / editors ----------
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.sublime-project
+.sublime-workspace
+
+# ---------- Operating systems ----------
+# Windows
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+# macOS
+.DS_Store
+._*
+# Linux
+*~
+
+# ---------- Project-specific (lab artifacts) ----------
+# Never commit captured traffic or lab evidence
+*.pcap
+*.pcapng
+capture/
